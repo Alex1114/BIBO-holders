@@ -24,12 +24,12 @@ for i in range(len(holders)):
             quantity[-1] = x
 
     else:
-        address.append(holders[i])
+        address.append("\'" + str(holders[i]) + "\'")
         quantity.append(x)
 
     if (repeat == False and i > 0):
         x = 1
-        address.append(holders[i])
+        address.append("\'" + str(holders[i]) + "\'")
         quantity.append(x)
 
 print(len(quantity))

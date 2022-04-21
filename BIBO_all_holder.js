@@ -11,7 +11,7 @@ const contract = new web3.eth.Contract(config.ABI_ARRAY, config.CONTRACT_ADDRESS
     await contract.methods.totalSupply().call()
         .then(async (total) => {
             const holders = [];
-            for (let i = 0; i < 1098; i += 1) {
+            for (let i = 0; i < 1099; i += 1) {
                 console.log(i)
                 await utils.addHolder(holders, contract, i);
                 function sleep(delay) {
